@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#grid__principal {
+  background-color: rgba(255, 0, 0, 0.527);
+  display: grid;
+  overflow: hidden;
+  grid-template-areas: "header" "main" "footer";
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.principal__article_div {
+  margin: 5px;
+  border: 1px solid black;
+}
+.principal__article_div h2 {
+  width: 340px;
+}
+
+.footer__div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__div li {
+  list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+  #grid__principal {
+    background-color: rgba(209, 209, 209, 0.781);
+    overflow: auto;
+    grid-template-areas: "header header header" "main main main" "footer footer footer ";
+  }
+  .principal__section__article_div {
+    font-size: 200%;
+    margin: 100px;
+  }
+  .principal__article {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

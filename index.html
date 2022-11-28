@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/estilo.css">
-    <title>GYM MASTER</title>
+    <title>STREER FIT</title>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
         <header class="body__header">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <a class="navbar-brand">GYM MASTER</a>
+                    <a class="navbar-brand">STREET FIT</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -45,32 +45,53 @@
                     </div>
                 </div>
             </nav>
+            <div id="carouselExampleControls" class="carousel slide tamaniogeneral" data-bs-ride="carousel">
+                <div class="carousel-inner tamaniogeneral">
+                    <div class="carousel-item active w-100 h-100">
+                        <video src="./img/portada.mp4" class="d-block w-100 h-100" autoplay muted loop></video>
+                    </div>
+                    <div class="carousel-item">
+                        <video src="./img/inscríbete.mp4" class="d-block w-100 h-100" autoplay muted loop></video>
+                    </div>
+                    <div class="carousel-item">
+                        <video src="./img/entrena.mp4" class="d-block w-100 h-100" autoplay muted loop></video>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </header>
 
-        <!-- Main principal -->
+        <!-- Main principal -->                                                                                                                                                           
 
         <main class="principal">
             <section class="principal__section t-center">
-                <h1 class="principal__section_h1">ENTRENA EN VIVO</h1>
+                <h1 class="principal__section_h1">NO TE QUEDES SIN ENTRENAR! ENTRENA AHORA! ENTRENA EN VIVO</h1>
                 <article class="principal__section_article">
-                    <div class="principal__section__article_div">
+                    <div class="principal__section__article_div cards">
                         <a class="principal__section__article__div_a" href="./pages/b-entrenos.html">IR AL ENTRENAMIENTO EN VIVO</a>
                     </div>
                 </article>
             </section>
             <article class="principal__article t-center">
-                <div class="principal__article_div">
-                    <h2>Articulos</h2>
-                    <a href="./pages/c-planes.html"><img class="principal__article__div_img img-modificacion" src="./img/pesa.jpg" alt="foto de pesas"></a>
-                </div>
-                <div class="principal__article_div">
-                    <h2>Entrenamientos</h2>
-                    <a href="./pages/b-entrenos.html"><img class="principal__article__div_img img-modificacion" src="./img/persona.jpg" alt="foto de personas"></a>
-                </div>
-                <div class="principal__article_div">
-                    <h2>Profesores</h2>
-                    <a href="./pages/d-nosotros.html"><img class="principal__article__div_img img-modificacion" src="./img/entrenador.jpg" alt="foto de profesores"></a>
-                </div>
+                    <div class="principal__article_div">
+                        <h2>Articulos</h2>
+                        <a href="./pages/c-planes.html"><img class="card" src="./img/trailer.png" alt="foto de pesas"></a>
+                    </div>
+                    <div class="principal__article_div">
+                        <h2>Entrenamientos</h2>
+                        <a href="./pages/b-entrenos.html"><img class="card" src="./img/plaza.png" alt="foto de personas"></a>
+                    </div>
+                    <div class="principal__article_div">
+                        <h2>Profesores</h2>
+                        <a href="./pages/d-nosotros.html"><img class="card" src="./img/profesor.png" alt="foto de profesores"></a>
+                    </div>
             </article>
         </main>
 
@@ -79,9 +100,8 @@
         <footer class="footer">
             <div class="footer__div">
                 <ul class="footer__div_ul">
-                    <li><a href="https://www.whatsapp.com/"><img class="footer-img" src="./img/whatsapp.png" alt="foto de whatsapp"></a> Contactanos por whatsapp</li>
+                    <li><a href="https://wa.me/5491131082965"><img class="footer-img" src="./img/whatsapp.png" alt="foto de whatsapp"></a> Contactanos por whatsapp</li>
                     <li><a href="https://www.instagram.com/"><img class="footer-img" src="./img/instagram.png" alt="foto de instagram"></a> Seguinos en instagram</li>
-                    <li><a href="https://www.facebook.com/"><img class="footer-img" src="./img/facebook.png" alt="foto de facebook"></a> Comparti en facebook</li>
                 </ul>
             </div>
         </footer>

@@ -1,10 +1,11 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 #grid__principal {
-  background-color: rgba(255, 0, 0, 0.527);
+  background-color: #70D843;
   display: grid;
   overflow: hidden;
   grid-template-areas: "header" "main" "footer";
@@ -22,11 +23,51 @@ footer {
   grid-area: footer;
 }
 
+.tamaniocarousel {
+  width: 100vw;
+  height: 100vh;
+}
+
 .principal {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.principal h1 {
+  width: 100vw;
+  padding: 50px 0px 50px 0px;
+  margin: 0px;
+  background-color: #ffffff;
+  font-size: 140%;
+}
+.principal .principal__section__article_div {
+  padding: 100px 0px 100px 0px;
+  font-size: 150%;
+}
+
+.card {
+  width: 200px;
+  height: 260px;
+  background-color: #212121;
+  box-shadow: 15px 15px 30px #191919, -15px -15px 30px #292929;
+  transition: border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s, transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.card:hover {
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  transform: scale(1.05);
+}
+
+.cards {
+  background-color: #212121;
+  box-shadow: 15px 15px 30px #191919, -15px -15px 30px #292929;
+  transition: border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s, transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.cards:hover {
+  transform: scale(1.05);
 }
 
 .t-center {
@@ -34,11 +75,7 @@ footer {
 }
 
 .principal__article_div {
-  margin: 5px;
-  border: 1px solid black;
-}
-.principal__article_div h2 {
-  width: 340px;
+  margin: 20px;
 }
 
 .footer__div {
@@ -57,21 +94,19 @@ footer {
 @media screen and (min-width: 768px) {
   #grid__principal {
     background-color: rgba(209, 209, 209, 0.781);
-    overflow: auto;
     grid-template-areas: "header header header" "main main main" "footer footer footer ";
   }
   .principal__section__article_div {
     font-size: 200%;
-    margin: 100px;
   }
   .principal__article {
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
   }
-  .footer__div ul {
+  .footer__div_ul {
     flex-direction: row;
     gap: 5rem;
   }

@@ -5,7 +5,7 @@
 }
 
 #grid__principal {
-  background-color: #70D843;
+  background-color: #0FDB13;
   display: grid;
   overflow: hidden;
   grid-template-areas: "header" "main" "footer";
@@ -28,6 +28,44 @@ footer {
   height: 100vh;
 }
 
+.color-verder {
+  color: #0FDB13;
+}
+
+.center-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.card {
+  width: 80vw;
+  height: 45vh;
+  background-color: #212121;
+  box-shadow: 15px 15px 30px #191919, -15px -15px 30px #292929;
+  transition: border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s, transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.card:hover {
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  transform: scale(1.05);
+}
+
+.cards {
+  background-color: #212121;
+  transition: border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s, transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.cards:hover {
+  transform: scale(1.05);
+}
+
 .principal {
   display: flex;
   flex-direction: column;
@@ -45,37 +83,13 @@ footer {
   padding: 100px 0px 100px 0px;
   font-size: 150%;
 }
-
-.card {
-  width: 200px;
-  height: 260px;
-  background-color: #212121;
-  box-shadow: 15px 15px 30px #191919, -15px -15px 30px #292929;
-  transition: border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s, transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
-}
-
-.card:hover {
-  border-bottom-right-radius: 50px;
-  border-top-left-radius: 50px;
-  transform: scale(1.05);
-}
-
-.cards {
-  background-color: #212121;
-  box-shadow: 15px 15px 30px #191919, -15px -15px 30px #292929;
-  transition: border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s, transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
-}
-
-.cards:hover {
-  transform: scale(1.05);
-}
-
-.t-center {
-  text-align: center;
-}
-
-.principal__article_div {
+.principal .principal__article_div {
   margin: 20px;
+}
+
+.footer {
+  background-color: #212121;
+  margin-top: 70px;
 }
 
 .footer__div {
@@ -96,6 +110,10 @@ footer {
     background-color: rgba(209, 209, 209, 0.781);
     grid-template-areas: "header header header" "main main main" "footer footer footer ";
   }
+  .card {
+    width: 25vw;
+    height: 25vh;
+  }
   .principal__section__article_div {
     font-size: 200%;
   }
@@ -106,7 +124,7 @@ footer {
     justify-content: space-evenly;
     align-items: center;
   }
-  .footer__div_ul {
+  .footer__div ul {
     flex-direction: row;
     gap: 5rem;
   }
@@ -116,6 +134,33 @@ footer {
     background-color: rgb(209, 209, 209);
     overflow: hidden;
   }
+  .card {
+    width: 30vw;
+    height: 80vh;
+  }
+}
+.margin-article {
+  margin-top: 50px;
+}
+
+.img-portada {
+  padding: 0px;
+  width: 100vw;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 30%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 /*# sourceMappingURL=estilo.css.map */

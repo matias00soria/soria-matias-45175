@@ -7,7 +7,7 @@
 // Dispositivos Mobile o inferior a 768px
 
 #grid__principal{
-    background-color:#70D843;
+    background-color:#0FDB13;
     display: grid;
     overflow: hidden;
     grid-template-areas:
@@ -26,10 +26,61 @@ footer{
     grid-area: footer;
 }
 
+// Clases
+
 .tamaniocarousel{
     width: 100vw;
     height: 100vh;
 }
+
+.color-verder{
+    color: #0FDB13;
+}
+
+.center-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.t-center{
+    text-align: center;
+}
+
+// Fin de clases
+
+// Card
+
+.card {
+    width: 80vw;
+    height: 45vh;
+    background-color: #212121;
+    box-shadow: 15px 15px 30px #191919,
+                -15px -15px 30px #292929;
+    transition: border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s,
+                transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.card:hover {
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    transform: scale(1.05);
+}
+
+.cards {
+    background-color: #212121;
+    transition: border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s,
+                transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.cards:hover {
+    transform: scale(1.05);
+}
+
+// Fin de Card
+
+// Main
 
 .principal{
     display: flex;
@@ -49,48 +100,20 @@ footer{
         padding: 100px 0px 100px 0px;
         font-size: 150%;
     }
+
+    .principal__article_div{
+        margin: 20px;
+    }
 }
 
-// card
+// Fin de Main
 
-.card {
-    width: 200px;
-    height: 260px;
+// Footer
+
+.footer{
     background-color: #212121;
-    box-shadow: 15px 15px 30px #191919,
-                -15px -15px 30px #292929;
-    transition: border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s,
-                transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    margin-top: 70px;
 }
-
-.card:hover {
-    border-bottom-right-radius: 50px;
-    border-top-left-radius: 50px;
-    transform: scale(1.05);
-}
-
-.cards {
-    background-color: #212121;
-    box-shadow: 15px 15px 30px #191919,
-                -15px -15px 30px #292929;
-    transition: border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s,
-                transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
-}
-
-.cards:hover {
-    transform: scale(1.05);
-}
-
-// Fin de card
-
-.t-center{
-    text-align: center;
-}
-
-.principal__article_div{
-    margin: 20px;
-}
-
 .footer__div {
     display: flex;
     flex-direction: column;
@@ -105,6 +128,8 @@ footer{
     }
 }
 
+// Fin de Footer
+
 // Dispositivos Tablets o superior a 768px
 
 @media screen and (min-width: 768px) {
@@ -117,9 +142,20 @@ footer{
     'footer footer footer ';
     }
 
+// Card
+
+.card {
+    width: 25vw;
+    height: 25vh;
+}
+
+// Fin de card
+
+// Main
+
 .principal__section__article_div{
         font-size: 200%;
-    }
+}
 
 .principal__article{
     width: 100vw;
@@ -129,20 +165,34 @@ footer{
     align-items: center;
 }
 
-.footer__div_ul{
+// Fin de Main
+
+// Footer
+
+.footer__div ul{
     flex-direction: row;
     gap: 5rem;
 }
 
-
+// Fin de Footer
 
 }
 
-// vista destop o superior a 1024px
+// Vista destop o superior a 1024px
 
 @media screen and (min-width: 1024px) {
     #grid__principal{
         background-color:rgb(209, 209, 209);
         overflow: hidden;
-    }
+}
+
+// card
+
+.card {
+    width: 30vw;
+    height: 80vh;
+}
+
+// Fin de Card
+
 }
